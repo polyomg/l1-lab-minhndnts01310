@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+</head>
+<body>
+<div class="card mx-auto" style="max-width:800px">
+<form action="/Tinh/click" method="post">
+<h2>Form Tính CVS</h2>
+<h3>Chiều Dài:</h3>
+<input class="form-control" type="number" name="dai" placeholder="Nhập chiều dài vào đây">
+<h3>Chiều Rộng:</h3>
+<input class="form-control" name="rong" type="number" placeholder="Nhập chiều rộng vào đây">
+<button type="submit" class="btn btn-primary my-3">Tính</button>
+</div>
+<div th:if="${CV}" class="alert alert-info mt-3">
+        Chu vi: <span th:text="${CV}"></span>
+    </div>
+    <div th:if="${S}" class="alert alert-danger mt-3">
+        Diện tích: <span th:text="${S}"></span>
+    </div>
+</body>
+</html>
