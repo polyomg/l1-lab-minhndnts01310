@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Gửi Email</title>
+</head>
+<body>
+<h3>Gửi Email</h3>
+
+<form method="post" th:action="@{/mail/send-form}">
+    <label>From:</label><br>
+    <input type="email" name="from" value="minhndnts01310@fpt.edu.vn" readonly><br><br>
+
+    <label>To:</label><br>
+    <input type="email" name="to" required><br><br>
+
+    <label>Cc:</label><br>
+    <input type="text" name="cc"><br><br>
+
+    <label>Bcc:</label><br>
+    <input type="text" name="bcc"><br><br>
+
+    <label>Subject:</label><br>
+    <input type="text" name="subject" required><br><br>
+
+    <label>Body:</label><br>
+    <textarea name="body" rows="6" cols="50" required></textarea><br><br>
+
+    <label>File đính kèm (tùy chọn):</label><br>
+    <input type="text" name="filenames" placeholder="C:/file1.pdf, C:/file2.jpg"><br><br>
+
+    <button type="submit" name="action" value="send">Gửi trực tiếp</button>
+    <button type="submit" name="action" value="queue">Đưa vào hàng đợi</button>
+</form>
+
+</body>
+</html>
