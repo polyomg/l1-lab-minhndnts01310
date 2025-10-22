@@ -14,9 +14,9 @@ public class MailController {
     @GetMapping("/mail/send")
     public String send() {
         try {
-            mailService.send("nguyenhoangminhquan786@gmail.com", 
-            		"Quân gửi thư", 
-            		"<b>Xin chào!</b><br>Tôi là Nguyễn Hoàng Minh Quân, ts01396");
+            mailService.send("Minhvloghacker@gmail.com", 
+            		"Minh gửi thư", 
+            		"<b>Xin chào!</b><br>Tôi là Minh");
             return "Mail của bạn đã được gửi đi";
         } catch (Exception e) {
             return e.getMessage();
@@ -26,7 +26,7 @@ public class MailController {
     @ResponseBody
     @RequestMapping("/mail/send-MailerService")
 	    public String send2(Model model) {
-    	mailService.push("nguyenhoangminhquan786@gmail.com", "Mail hàng đợi", "<b>Đây là mail gửi nền qua @Scheduled</b>");
+    	mailService.push("Beprobro123@gmail.com", "Mail hàng đợi", "<b>Đây là mail gửi nền qua @Scheduled</b>");
         return " Mail của bạn đã được xếp vào hàng đợi!";
     }
 }

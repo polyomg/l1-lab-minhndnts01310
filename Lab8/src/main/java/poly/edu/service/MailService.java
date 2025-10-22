@@ -9,7 +9,7 @@ public interface MailService{
 	@Builder
 	public static class Mail{
 		@Default
-		private String from = "Quân FPT <quannhmts01396@fpt.edu.vn>";
+		private String from = "Minh <Beprobro123@gmail.com>";
 		private String to, cc, bcc, subject, body, filenames;
 	}
 	void send(Mail mail);

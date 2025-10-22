@@ -9,7 +9,7 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>poly.edu</groupId>
-	<artifactId>package-com.poly.slide5.service-import-jakarta.servlet.http.Cookie-import-jakarta.servlet.http.HttpServletRequest-import-jakarta.servlet.http.HttpServletResponse-import-org.springframework.beans.factory.annotation.Autowired-import-org.springframework.stereotype.Service-Service-public-class-CookieService-Autowired-private-HttpServletResponse-response-public-Cookie-create-String-name-String-value-int-expiry-Cookie-cookie-new-Cookie-name-value-cookie.setPath-cookie.setMaxAge-expiry-cookie.setHttpOnly-true-response.addCookie-cookie-return-cookie-Autowired-private-HttpServletRequest-request-public-String-getValue-String-name-if-request.getCookies-null-for-Cookie-cookie-request.getCookies-if-cookie.getName.equals-name-return-cookie.getValue-return-null-public-void-delete-String-name-Cookie-cookie-new-Cookie-name-cookie.setPath-cookie.setMaxAge-0-response.addCookie-cookie-Service-public-class-CookieService-public-Cookie-create-String-name-String-value-int-expiry-return-null-public-void-delete-String-name-public-String-getValue-String-name-return-null</artifactId>
+	<artifactId>TS01310_Lab8</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>war</packaging>
 	<name>TS01310_Lab8</name>
@@ -32,47 +32,41 @@
 	</properties>
 	<dependencies>
 		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-thymeleaf</artifactId>
-		</dependency>
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-web</artifactId>
-		</dependency>
-
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-devtools</artifactId>
-			<scope>runtime</scope>
-			<optional>true</optional>
-		</dependency>
-		<dependency>
-			<groupId>org.projectlombok</groupId>
-			<artifactId>lombok</artifactId>
-			<optional>true</optional>
-		</dependency>
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-tomcat</artifactId>
-			<scope>provided</scope>
-		</dependency>
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-test</artifactId>
-			<scope>test</scope>
-		</dependency>
-		<dependency>
-<groupId>org.springframework.boot</groupId>
-<artifactId>spring-boot-starter-mail</artifactId>
+<groupId>com.microsoft.sqlserver</groupId>
+<artifactId>mssql-jdbc</artifactId>
+<scope>runtime</scope>
 </dependency>
-		<dependency>
+<dependency>
 <groupId>org.springframework.boot</groupId>
 <artifactId>spring-boot-starter-data-jpa</artifactId>
 </dependency>
 <dependency>
-<groupId>com.microsoft.sqlserver</groupId>
-<artifactId>mssql-jdbc</artifactId>
+<groupId>org.springframework.boot</groupId>
+<artifactId>spring-boot-starter-mail</artifactId>
+</dependency>
+<dependency>
+<groupId>org.springframework.boot</groupId>
+<artifactId>spring-boot-starter-thymeleaf</artifactId>
+</dependency>
+<dependency>
+<groupId>org.springframework.boot</groupId>
+<artifactId>spring-boot-starter-web</artifactId>
+</dependency>
+<dependency>
+<groupId>org.springframework.boot</groupId>
+<artifactId>spring-boot-devtools</artifactId>
 <scope>runtime</scope>
+<optional>true</optional>
+</dependency>
+<dependency>
+<groupId>org.projectlombok</groupId>
+<artifactId>lombok</artifactId>
+<optional>true</optional>
+</dependency>
+<dependency>
+<groupId>org.springframework.boot</groupId>
+<artifactId>spring-boot-starter-test</artifactId>
+<scope>test</scope>
 </dependency>
 	</dependencies>
 
